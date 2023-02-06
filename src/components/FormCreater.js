@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Container, Jumbotron, FormGroup, Form, Label, Input, FormFeedback } from 'reactstrap';
+import NavBar from './NavBar';
 
 function FormCreater() {
   const [submitted, setSubmitted] = useState(false);
@@ -33,6 +33,8 @@ function FormCreater() {
 
   return (
     <Container onSubmit={handleSubmit}>
+      <NavBar />
+
       <Jumbotron>
         <h1 className="display-4">Créer un nouveau formulaire</h1>
         <hr className="my-4" />
